@@ -35,6 +35,8 @@ namespace LogIn_Form.Dll
                 cmd.Parameters.AddWithValue("@LastName", alldetail.LastName);
                 cmd.Parameters.AddWithValue("@Address", alldetail.Address);
                 cmd.Parameters.AddWithValue("@Gender", alldetail.Gender);
+                cmd.Parameters.AddWithValue("@IsvalidUser",alldetail.IsvalidUser);
+                cmd.Parameters.AddWithValue("@IsvalidKey",alldetail.IsvalidKey);
                 cmd.ExecuteNonQuery();
                 con.Close();
 
